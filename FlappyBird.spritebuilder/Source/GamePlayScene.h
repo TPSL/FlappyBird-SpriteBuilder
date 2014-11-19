@@ -9,6 +9,8 @@
 #import "CCNode.h"
 #import "Character.h"
 
+float timeSinceObstacle;
+
 typedef NS_ENUM(NSInteger, DrawingOrder) {
     DrawingOrderPipes,
     DrawingOrderGround,
@@ -19,7 +21,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 {
     
     Character* character; //will store an instance of our Flappy Bird
-    CCPhysicsNode physicsNode:  //variable will ref a node that simulates Physics
+    CCPhysicsNode *physicsNode;  //variable will ref a node that simulates Physics
 }
 
 -(void) initialize;
