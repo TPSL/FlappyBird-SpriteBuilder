@@ -18,6 +18,19 @@
 {
     // put update code here
     [character flap];
+    
+    //Increment the time since the last obstacle was addes
+    timeSinceObstacle += delta;  //delta is approximately 1/60th of a second
+    
+    //Check to see if 2 seconds have passed
+    if (timeSinceObstacle > 2.0F){
+        //Add new obstacle
+        [self addObstacle];
+        
+        //then reset the timer
+        timeSinceObstacle = 0.0f;
+    }
+
 }
 
 // put new methods here
