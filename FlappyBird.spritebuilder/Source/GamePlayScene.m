@@ -23,7 +23,7 @@
 // put new methods here
 
 //Add touch input functionality
--(void)touchBegan:(UITouch *)touch withEvent:(UIEVent *)event {
+-(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     //this is called each time the player touches the screen
     [character flap];
 }
