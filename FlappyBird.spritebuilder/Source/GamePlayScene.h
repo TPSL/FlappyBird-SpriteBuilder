@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 {
     
     Character* character; //will store an instance of our Flappy Bird
-    CCPhysicsNode* physicsNode;  //variable will ref a node that simulates Physics
+    CCPhysicsNode* physicsNode;  //variable will ref a node that simulates Physics  //CCPhysicsNode
     float timeSinceObstacle;
 }
 
